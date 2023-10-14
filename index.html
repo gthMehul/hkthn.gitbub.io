@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Programming Language Chatbot</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            Programming Language Chatbot
+        </div>
+        <div class="chat" id="chat-box">
+            <div class="message bot">
+                Hi there! What's your name?
+            </div>
+            <div class="message user" id="user-name-container">
+                <input type="text" id="user-name" placeholder="Your Name">
+                <button onclick="setUserName()">Submit</button>
+            </div>
+        </div>
+        <div class="user-input" style="display: none;">
+            <div class="message user" id="user-name-text" style="display: none;"></div>
+            <div class="message user" id="question-container" style="display: none;">
+                <p id="question-text"></p>
+                <label>
+                    <input type="radio" name="answer" value="a"> <span id="answer-a"></span>
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="b"> <span id="answer-b"></span>
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="c"> <span id="answer-c"></span>
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="d"> <span id="answer-d"></span>
+                </label>
+                <button onclick="submitAnswer()">Submit Answer</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
